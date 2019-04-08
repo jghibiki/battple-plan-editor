@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" media="print" href="print.css">
+        <link rel="stylesheet" type="text/css"  href="simplemde.min.css">
+        <script type="text/javascript" src="fabric.min.js"></script>
+        <script type="text/javascript" src="simplemde.min.js"></script>
+    </head>
+    <body>
+        <textarea id="markdown_editor"></textarea>
+        <canvas id="c" height="668" width="1000" style=" border:1px solid #ccc;">
+        </canvas>
+        <br/>
+        <button onmousedown="printPlan()">Print Plan</button>
+        <button onmousedown="createRect()">Create Rect</button>
+        <button onmousedown="deleteRect()">Delete Selected Object</button>
+        <button onmousedown="changeObjectColor()">Change Object Color</button>
+        <script type="text/javascript" src="index.js"></script>
+        <script>
+            var simplemde = new SimpleMDE({ element: document.getElementById("markdown_editor") });
+        </script>
+    </body>
+</html>
